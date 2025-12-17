@@ -1,0 +1,8 @@
+# ignore ALL .log files
+*.log
+*.class
+.idea/misc.xml
+.idea/sqldialects.xml
+
+# ignore ALL files in below directory
+/target/
