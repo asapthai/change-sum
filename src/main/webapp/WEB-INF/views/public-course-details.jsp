@@ -512,7 +512,10 @@
                         <c:otherwise>
 
                             <!-- User is logged in -->
-                            <form action="${pageContext.request.contextPath}/learning-enrollment" method="post">
+                            <form action="${pageContext.request.contextPath}/course-enrollment" method="get">
+
+                                    <%--            add csrftoken--%>
+                                <input type="hidden" name="csrfToken" value="${sessionScope.csrfToken}">
 
                                 <input type="hidden" name="courseId" value="${course.courseId}">
                                 <button type="submit" class="btn btn-success btn-lg btn-buy">
